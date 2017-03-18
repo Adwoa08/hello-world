@@ -1,4 +1,1 @@
-# hello-world
-Just new
-Hi!
-Terry here, learning coding!
+My first attempt at coding
