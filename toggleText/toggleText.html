@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toggle button</title>
+</head>
+<body>
+    <form>
+        <button id="btn">Submit</button>
+        <div id="hidden">I know who you are</div>
+    </form>
+    
+    
+    <script>
+        var hidden = document.getElementById('hidden');
+        var name = document.getElementById('name');
+        var btn = document.getElementById('btn');
+        var showText = false;
+        
+        
+        function hide (){
+            if(showText){
+                hidden.style.display = 'block';
+            }else{
+                hidden.style.display = 'none';
+            }
+        }
+        hide();
+        
+        
+        
+        btn.addEventListener('click', function(e){
+            e.preventDefault();
+            showText = !showText;
+            hide();
+        });
+    </script>
+</body>
+</html>
